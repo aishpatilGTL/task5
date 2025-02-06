@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr1 = [1, 2, 3];
+        var arr2 = [4, 5, 6];
+     function mergeArrays(arr1, arr2) {
+    var merged = new Array(arr1.length + arr2.length); 
+    var index = 0;
+
+
+    for (var i = 0; i < arr1.length; i++) {
+        merged[index] = arr1[i];
+        index++;
+    }
+
+   
+    for (var i = 0; i < arr2.length; i++) {
+        merged[index] = arr2[i];
+        index++;
+    }
+
+    console.log("merge array is",merged);
+}
+
+
+
+console.log(mergeArrays(arr1, arr2));
+    </script>
+    
+</body>
+</html>
