@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      let cars = [
+  { id: 1, make: "Toyota", model: "Corolla" },
+  { id: 2, make: "Honda", model: "Civic" },
+  { id: 3, make: "Ford", model: "Focus" }
+];
+
+let carsObject = {};
+
+cars.forEach(car => {
+  carsObject[car.id] = car;  
+});
+
+console.log(carsObject);
+
+    </script>
+    
+</body>
+</html>
+

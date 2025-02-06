@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+  
+let car = {
+  make: "Harrier",
+  model: "Corolla",
+  year: 2021,
+  isRunning: false, 
+  
+ 
+  start: function start() {
+    if (!this.isRunning) {
+      this.isRunning = true;
+      console.log("The car has started.");
+    } else {
+      console.log("The car is already running.");
+    }
+  },
+  
+
+  stop: function() {
+    if (this.isRunning) {
+      this.isRunning = false;
+      console.log("The car has stopped.");
+    } else {
+      console.log("The car is already stopped.");
+    }
+  }
+};
+
+
+    </script>
+    
+</body>
+</html>
+
