@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    var num=prompt("Enter the no");
+console.log(num);
+    let largest = 0;
+  
+
+    num = Math.abs(num);
+  
+    do {
+      
+      let digit = num % 10;
+  
+
+      if (digit > largest) {
+        largest = digit;
+      }
+ 
+      num = Math.floor(num / 10);
+    } while (num > 0);
+  
+    console.log(largest); 
+  
+  
+  
+   </script>
+</body>
+</html>
